@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurusan Sekolah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        nav {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family:  Arial, sans-serif;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f3f4f6;
+        }
+        .container {
+            display: flex;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .card:hover img {
+            transform: scale(1.1);
+        }
+        .card .content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        .card:hover .content {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .content h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .content p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        .majors {
+            margin-top: 20px;
+        }
+        .majors h2 {
+            font-size: 1.8rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .majors .major {
+            margin-bottom: 15px;
+        }
+        .majors .major h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 5px 0;
+            text-align: center;
+        }
+        .majors .major p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #1e90ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">   SMK Al-Hajid</div>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="Jasa.html">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+
+    <h1> jurusan-jurusan Unggulan
+
+    </h1>
+    <div class="container">
+        <div class="card">
+            <img src="istockphoto-950603046-612x612.jpg" alt="Teknik Informatika">
+            <div class="content">
+                <h3>Teknik Informatika</h3>
+                <p>Mempelajari ilmu komputer dan teknologi informasi.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images (5).jpg" alt="Akuntansi">
+            <div class="content">
+                <h3>Akuntansi</h3>
+                <p>Fokus pada keuangan dan pembukuan perusahaan.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="shutterstock_434383288.jpg" alt="Desain Grafis">
+            <div class="content">
+                <h3>Desain Grafis</h3>
+                <p>Kreativitas di bidang desain visual dan multimedia.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Aafkes-Blog-Photos-2021-09-29T200829.168.png" alt="Perhotelan">
+            <div class="content">
+                <h3>Perhotelan</h3>
+                <p>Pelatihan di industri pariwisata dan perhotelan.</p>
+            </div>
+     
+            
+            
+        </div>
+    </div>
+    <div class="majors">
+        <h2>Tentang kami</h2>
+        <div class="major">
+           <p</p> Selamat datang di SMK Al-Hajid, tempat di mana pendidikan berkualitas bertemu dengan inovasi. 
+            Sekolah kami memiliki komitmen untuk menciptakan lingkungan belajar yang inspiratif, mendukung, 
+            dan penuh semangat. Dengan fasilitas modern dan tenaga pendidik yang berpengalaman, kami 
+            berusaha memberikan pendidikan terbaik kepada siswa-siswi kami.</p>
+
+           <p> Kami menawarkan berbagai program jurusan seperti Teknik Informatika, Akuntansi, Desain Grafis, 
+            dan Perhotelan yang dirancang untuk memenuhi kebutuhan dunia kerja saat ini. Selain itu, 
+            kami juga mengedepankan nilai-nilai moral dan keterampilan hidup untuk membentuk generasi 
+            yang siap menghadapi tantangan masa depan.</p>
+            </div>
+        </div>
+    <div>
+    
+        <div class="majors">
+            <h2>Profil Singkat Jurusan</h2>
+            <div class="major">
+                <h3>Perhotelan</h3>
+                <p>
+                    Jurusan Perhotelan memberikan pelatihan mendalam tentang industri pariwisata dan perhotelan. 
+                    Siswa belajar tentang manajemen hotel, pelayanan tamu, tata boga, dan keterampilan lainnya 
+                    yang relevan dengan kebutuhan industri.
+                </p>
+            </div>
+            <div class="major">
+                <h3>Akuntansi</h3>
+                <p>
+                    Jurusan Akuntansi membekali siswa dengan kemampuan pengelolaan keuangan, pembuatan laporan 
+                    keuangan, dan analisis data keuangan yang mendukung pengambilan keputusan dalam berbagai 
+                    organisasi.
+                </p>
+            </div>
+            <div class="major">
+                <h3>Desain Grafis</h3>
+                <p>
+                    Jurusan Desain Grafis mengembangkan kreativitas siswa dalam bidang visual dengan menggunakan 
+                    teknologi desain terkini. Siswa diajarkan keterampilan seperti desain logo, ilustrasi, 
+                    dan multimedia.
+                </p>
+            </div>
+            <div class="major">
+                <h3>Teknik Informatika</h3>
+                <p>
+                    Jurusan Teknik Informatika fokus pada pemrograman, pengembangan aplikasi, dan teknologi 
+                    jaringan. Siswa dilatih untuk memahami solusi teknologi yang inovatif dan relevan 
+                    dengan kebutuhan dunia modern.
+                </p>
+            </div>
+    <div class="pin"><h2>Kontak Kami</h2> </div>      
+
+  <div class="kii">
+    <p><strong>Instagram:</strong>jemuranalumunium</p>
+    <p><strong>Youtube:</strong>----</p>
+    <p><strong>Email:</strong>rearonald35@gmail.com</p>
+    <p><strong>Telepon:</strong>0812-3730-2030</p>
+  </div>
+
+
+            <footer class="footer">
+                <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> |
+                    <a href="#">Contact Us</a>
+                </p>
+            </footer>
+ 
+</body>
+</html>
